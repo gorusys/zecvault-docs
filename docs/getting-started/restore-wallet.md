@@ -17,10 +17,10 @@ If you're moving ZecVault to a new device, recovering from a lost device, or imp
 
 On a fresh install, the onboarding screen offers two options:
 
-- **Create new wallet** — generates a new seed
-- **Restore from seed** — enter an existing seed phrase
+- **New seed** — generates a new seed
+- **Add account** — enter an existing seed phrase
 
-Select **Restore from seed**.
+Select **Add account**.
 
 ---
 
@@ -52,7 +52,7 @@ The **birthday height** is the Zcash block height at or before the first time yo
     - **Mainnet:** 419,200 (Sapling activation)
     - **Testnet:** 280,000
 
-You can update the birthday height later in **Settings → Wallet → Birthday height** if you realize you set it too high and some history is missing.
+You can update the birthday height later in **Wallet → Birthday height** if you realize you set it too high and some history is missing.
 
 ---
 

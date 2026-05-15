@@ -78,6 +78,6 @@ See [Restore a Wallet](../getting-started/restore-wallet.md) for the full walkth
 
 ## Exporting an additional backup later
 
-After initial setup, you can export your seed phrase again from **Settings → Wallet → Export backup**. You'll need to enter your password to authorize the export.
+After initial setup, you can export your seed phrase again from **Wallet → Export backup**. You'll need to enter your password to authorize the export.
 
-You can also export all wallet backups at once from **Settings → Wallet → Export all backups** — useful if you have multiple wallets.
+You can also export all wallet backups at once from **Wallet → Export all backups** — useful if you have multiple wallets.

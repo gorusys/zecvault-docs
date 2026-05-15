@@ -69,7 +69,7 @@ The first sync may take a few minutes if your wallet has a long history. For a b
 
 ## Multiple wallets
 
-ZecVault supports multiple wallets (separate seed phrases) from one app. To add a second wallet, go to **Settings → Wallets → Add wallet**. You can switch between wallets from the same menu.
+ZecVault supports multiple wallets (separate seed phrases) from one app. To add a second wallet, go to **Wallets → Add wallet**. You can switch between wallets from the same menu.
 
 Each wallet has its own seed phrase — keep a separate backup for each.
 

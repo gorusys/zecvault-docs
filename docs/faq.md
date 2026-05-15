@@ -42,7 +42,7 @@ Yes. Go to **Settings → Security → Change password**. You'll need your curre
 
 ### Can I have multiple wallets?
 
-Yes. ZecVault supports multiple wallets (separate seed phrases) from one app. Go to **Settings → Wallets → Add wallet** to create or restore a second wallet. You can switch between them at any time.
+Yes. ZecVault supports multiple wallets (separate seed phrases) from one app. Go to **Wallets → Add wallet** to create or restore a second wallet. You can switch between them at any time.
 
 ---
 

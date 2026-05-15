@@ -102,4 +102,4 @@ The fee preview step always shows the exact fee before you commit — no surpris
 
 ## Sapling → Orchard migration
 
-If you have funds in the Sapling pool from an older wallet or exchange, you can migrate them to Orchard via **Settings → Wallet → Migrate Sapling to Orchard**. This performs a self-send — your ZEC moves from Sapling to Orchard in one transaction. The fee is deducted from the amount being migrated.
+If you have funds in the Sapling pool from an older wallet or exchange, you can migrate them to Orchard via **Wallet → Migrate Sapling to Orchard**. This performs a self-send — your ZEC moves from Sapling to Orchard in one transaction. The fee is deducted from the amount being migrated.
