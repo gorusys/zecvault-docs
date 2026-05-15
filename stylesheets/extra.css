@@ -1,0 +1,180 @@
+/* ZecVault docs — custom styles for Material theme */
+
+/* Brand colors — Zcash gold palette */
+:root {
+  --zec-gold: #F4B728;
+  --zec-gold-dark: #D4961E;
+  --zec-gold-light: #FDD169;
+  --zec-dark: #1A1A2E;
+  --zec-surface: #0F0F1A;
+}
+
+/* Primary color overrides */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #1A1A2E;
+  --md-primary-fg-color--light: #2D2D4E;
+  --md-primary-fg-color--dark:  #0D0D1A;
+  --md-accent-fg-color:         #F4B728;
+  --md-typeset-a-color:         #B58A00;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #F4B728;
+  --md-primary-fg-color--light: #FDD169;
+  --md-primary-fg-color--dark:  #D4961E;
+  --md-accent-fg-color:         #F4B728;
+  --md-typeset-a-color:         #FDD169;
+  --md-default-bg-color:        #0F0F1A;
+  --md-default-fg-color:        rgba(255,255,255,0.87);
+}
+
+/* ── Hero section ─────────────────────────────────────── */
+.hero-section {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  margin: 1.5rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(244,183,40,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+}
+
+/* Gold button */
+.hero-section .md-button--primary {
+  background: #F4B728;
+  color: #1A1A2E;
+  border-color: #F4B728;
+  font-weight: 600;
+}
+
+.hero-section .md-button--primary:hover {
+  background: #FDD169;
+  border-color: #FDD169;
+}
+
+.hero-section .md-button:not(.md-button--primary) {
+  color: rgba(255,255,255,0.85);
+  border-color: rgba(255,255,255,0.35);
+}
+
+.hero-section .md-button:not(.md-button--primary):hover {
+  border-color: #F4B728;
+  color: #F4B728;
+}
+
+/* ── Cards ────────────────────────────────────────────── */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  border-color: #F4B728;
+  box-shadow: 0 4px 20px rgba(244,183,40,0.12);
+}
+
+/* ── Navigation tabs ──────────────────────────────────── */
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #F4B728 !important;
+}
+
+/* ── Admonitions ──────────────────────────────────────── */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #F4B728;
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(244,183,40,0.1);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: #F4B728;
+}
+
+/* ── Code blocks ──────────────────────────────────────── */
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* ── Table styling ────────────────────────────────────── */
+.md-typeset table:not([class]) th {
+  background-color: rgba(244,183,40,0.1);
+  color: var(--md-default-fg-color);
+}
+
+/* ── Home page hide nav/toc spacing ──────────────────── */
+[data-md-component="content"] article h1:first-child {
+  display: none;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+.md-footer {
+  background: #1A1A2E;
+}
+
+/* ── Sidebar section headers ──────────────────────────── */
+.md-nav__title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ── Search highlight ────────────────────────────────── */
+.md-search-result__meta {
+  color: #F4B728;
+}
+
+/* ── Top announcement bar ─────────────────────────────── */
+.md-banner {
+  background: linear-gradient(90deg, #1A1A2E, #0F3460);
+  color: rgba(255,255,255,0.9);
+}
+
+/* ── Version badge ────────────────────────────────────── */
+.version-badge {
+  display: inline-block;
+  background: rgba(244,183,40,0.15);
+  border: 1px solid #F4B728;
+  color: #F4B728;
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
