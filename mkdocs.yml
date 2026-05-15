@@ -1,0 +1,143 @@
+site_name: ZecVault
+site_description: Privacy-first Zcash savings wallet with built-in goals and non-custodial security.
+site_url: https://gorusys.github.io/zecvault
+repo_url: https://github.com/gorusys/zecvault
+repo_name: gorusys/zecvault
+edit_uri: ""
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - announce.dismiss
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      title: On this page
+
+plugins:
+  - search:
+      lang: en
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gorusys/zecvault
+      name: ZecVault on GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zcash
+      name: Zcash on Twitter
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Yes, this helped
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: Could be improved
+          data: 0
+          note: Thanks — we'll work on it.
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - getting-started/index.md
+    - Download & Install: getting-started/installation.md
+    - Create a Wallet: getting-started/create-wallet.md
+    - Restore a Wallet: getting-started/restore-wallet.md
+  - Features:
+    - features/index.md
+    - Vaults: features/vaults.md
+    - Send ZEC: features/send.md
+    - Receive ZEC: features/receive.md
+    - Transaction History: features/history.md
+    - Round-Up Savings: features/round-up-savings.md
+  - Privacy:
+    - privacy/index.md
+    - Shielded Transactions: privacy/shielded-transactions.md
+    - Address Types: privacy/address-types.md
+    - Lightwalletd & Metadata: privacy/lightwalletd.md
+  - Security:
+    - security/index.md
+    - Encryption Model: security/encryption.md
+    - Backup & Recovery: security/backup.md
+    - Biometrics & Keyring: security/biometrics.md
+  - Protocol:
+    - protocol/index.md
+    - Vault Protocol (ZV1): protocol/vault-protocol.md
+    - ZIP Standards: protocol/zip-support.md
+    - Architecture: protocol/architecture.md
+  - Platforms:
+    - platforms/index.md
+    - Linux: platforms/linux.md
+    - macOS: platforms/macos.md
+    - Windows: platforms/windows.md
+  - FAQ: faq.md
